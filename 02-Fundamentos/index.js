@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var x = 30;
 var y = 32.3421332;
 console.log(x);
@@ -17,3 +15,6 @@ console.log(fullname);
 var a = true;
 console.log(a);
 console.log(typeof a);
+// inference e annotation
+var ann = "Teste";
+var inf = "Teste";
