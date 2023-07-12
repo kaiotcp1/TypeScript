@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var x = 30;
 var y = 32.3421332;
 console.log(x);
@@ -11,3 +13,7 @@ var fullname;
 var name2 = "Pasqualinotto";
 fullname = "".concat(firstName, " ").concat(name2);
 console.log(fullname);
+// Boolean
+var a = true;
+console.log(a);
+console.log(typeof a);

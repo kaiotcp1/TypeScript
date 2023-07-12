@@ -1,3 +1,5 @@
+import { type } from "express/lib/response";
+
 const x: number = 30;
 const y: number = 32.3421332
 
@@ -15,5 +17,9 @@ let fullname: string;
 let name2: string = "Pasqualinotto";
 
 fullname = `${firstName} ${name2}`
-
 console.log(fullname);
+
+// Boolean
+let a: boolean = true;
+console.log(a);
+console.log(typeof a);
