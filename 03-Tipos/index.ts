@@ -47,26 +47,35 @@ setTimeout(function () {
 function passCoordinates(coord: { x: number, y: number }) {
     console.log(`X coordinates: ${coord.x}, Y coordinates: ${coord.y}`);
 };
-const objCoord = {x: 329, y:293};
+const objCoord = { x: 329, y: 293 };
 passCoordinates(objCoord);
-const pessoaObj:{nome: string, surname: string} = {nome: "Kaio", surname: "Pasqualinotto"};
+const pessoaObj: { nome: string, surname: string } = { nome: "Kaio", surname: "Pasqualinotto" };
 console.log(pessoaObj);
 
 
 //propriedades opcionais
-function showNumbers(a: number, b:number, c?: number) {
+function showNumbers(a: number, b: number, c?: number) {
     console.log(`A:${a}, B:${b}, C:${c}`);
 };
-showNumbers(1,2);
+showNumbers(1, 2);
 
 
 //validando argumento opcional
-function advancedGreeting(firstname: string, lastname?:string) {
-    if(lastname !== undefined) {
+function advancedGreeting(firstname: string, lastname?: string) {
+    if (lastname !== undefined) {
         return console.log(`Ola, ${firstname} ${lastname}, tudo bem?`);
     };
-    
+
     return console.log(`Olá, ${firstname}, tudo bem?`);
 };
 advancedGreeting('Kaio');
 advancedGreeting('Kaio', 'Pasqualinotto');
+
+//union type
+function showBalance(balance: string | number) {
+    console.log(`O saldo da conta é ${balance}`);
+};
+showBalance(100);
+showBalance('500');
+const arr2: Array<Number | String | boolean> = [1, 'test', true];
+console.log(arr2);

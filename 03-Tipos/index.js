@@ -60,3 +60,12 @@ function advancedGreeting(firstname, lastname) {
 ;
 advancedGreeting('Kaio');
 advancedGreeting('Kaio', 'Pasqualinotto');
+//union type
+function showBalance(balance) {
+    console.log(`O saldo da conta é ${balance}`);
+}
+;
+showBalance(100);
+showBalance('500');
+const arr2 = [1, 'test', true];
+console.log(arr2);
