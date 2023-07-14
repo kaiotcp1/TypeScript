@@ -16,3 +16,8 @@ const arr1 = ['kaio', {
     }, [3, 5, 6, 7]];
 console.log(arr1);
 console.log(arr1[2]);
+//Parametros tipados
+function soma(a, b) {
+    console.log(`A some de A + B é : ${a + b}`);
+};
+soma(3, 3);
