@@ -52,3 +52,9 @@ passCoordinates(objCoord);
 const pessoaObj:{nome: string, surname: string} = {nome: "Kaio", surname: "Pasqualinotto"};
 console.log(pessoaObj);
 
+
+//propriedades opcionais
+function showNumbers(a: number, b:number, c?: number) {
+    console.log(`A:${a}, B:${b}, C:${c}`);
+};
+showNumbers(1,2);

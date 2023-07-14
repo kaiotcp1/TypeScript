@@ -43,3 +43,9 @@ const objCoord = { x: 329, y: 293 };
 passCoordinates(objCoord);
 const pessoaObj = { nome: "Kaio", surname: "Pasqualinotto" };
 console.log(pessoaObj);
+//propriedades opcionais
+function showNumbers(a, b, c) {
+    console.log(`A:${a}, B:${b}, C:${c}`);
+}
+;
+showNumbers(1, 2);
