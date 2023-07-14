@@ -10,3 +10,9 @@ console.log(nomes);
 const nums = [100, 200];
 nums.push(300);
 console.log(nums);
+//Any
+const arr1 = ['kaio', {
+        name: 'Kaio'
+    }, [3, 5, 6, 7]];
+console.log(arr1);
+console.log(arr1[2]);
