@@ -33,3 +33,13 @@ function greeting(name: string): string {
     return `Olá, ${name}`;
 };
 console.log(greeting('Kaio'));
+
+
+//função anonima
+setTimeout(function () {
+    const sallary: number = 1000;
+    // console.log(parseFloat(sallary))
+    console.log(sallary);
+}, 2000);
+
+
