@@ -58,3 +58,15 @@ function showNumbers(a: number, b:number, c?: number) {
     console.log(`A:${a}, B:${b}, C:${c}`);
 };
 showNumbers(1,2);
+
+
+//validando argumento opcional
+function advancedGreeting(firstname: string, lastname?:string) {
+    if(lastname !== undefined) {
+        return console.log(`Ola, ${firstname} ${lastname}, tudo bem?`);
+    };
+    
+    return console.log(`Olá, ${firstname}, tudo bem?`);
+};
+advancedGreeting('Kaio');
+advancedGreeting('Kaio', 'Pasqualinotto');

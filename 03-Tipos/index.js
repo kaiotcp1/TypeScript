@@ -49,3 +49,14 @@ function showNumbers(a, b, c) {
 }
 ;
 showNumbers(1, 2);
+//validando argumento opcional
+function advancedGreeting(firstname, lastname) {
+    if (lastname !== undefined) {
+        return console.log(`Ola, ${firstname} ${lastname}, tudo bem?`);
+    }
+    ;
+    return console.log(`Olá, ${firstname}, tudo bem?`);
+}
+;
+advancedGreeting('Kaio');
+advancedGreeting('Kaio', 'Pasqualinotto');
