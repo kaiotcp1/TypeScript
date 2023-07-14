@@ -34,3 +34,12 @@ setTimeout(function () {
     // console.log(parseFloat(sallary))
     console.log(sallary);
 }, 2000);
+//tipos de objeto
+function passCoordinates(coord) {
+    console.log(`X coordinates: ${coord.x}, Y coordinates: ${coord.y}`);
+}
+;
+const objCoord = { x: 329, y: 293 };
+passCoordinates(objCoord);
+const pessoaObj = { nome: "Kaio", surname: "Pasqualinotto" };
+console.log(pessoaObj);

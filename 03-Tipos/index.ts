@@ -43,3 +43,12 @@ setTimeout(function () {
 }, 2000);
 
 
+//tipos de objeto
+function passCoordinates(coord: { x: number, y: number }) {
+    console.log(`X coordinates: ${coord.x}, Y coordinates: ${coord.y}`);
+};
+const objCoord = {x: 329, y:293};
+passCoordinates(objCoord);
+const pessoaObj:{nome: string, surname: string} = {nome: "Kaio", surname: "Pasqualinotto"};
+console.log(pessoaObj);
+
