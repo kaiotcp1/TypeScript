@@ -26,3 +26,10 @@ function soma(a: number, b: number) {
     console.log(`A some de A + B é : ${a + b}`);
 };
 soma(3, 3);
+
+
+//retorno de função
+function greeting(name: string): string {
+    return `Olá, ${name}`;
+};
+console.log(greeting('Kaio'));

@@ -19,5 +19,12 @@ console.log(arr1[2]);
 //Parametros tipados
 function soma(a, b) {
     console.log(`A some de A + B é : ${a + b}`);
-};
+}
+;
 soma(3, 3);
+//retorno de função
+function greeting(name) {
+    return `Olá, ${name}`;
+}
+;
+console.log(greeting('Kaio'));
