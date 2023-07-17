@@ -84,7 +84,7 @@ console.log(arr2);
 
 //Avançando em union types
 function showUserRole(role: boolean | string) {
-    if(typeof role === 'boolean') {
+    if (typeof role === 'boolean') {
         return 'Usuário não aprovado!';
     };
     return `A função do usuário é ${role}`;
@@ -100,3 +100,20 @@ function showId(id: ID) {
 };
 showId(32);
 showId('29123723')
+
+
+//interface
+interface Point {
+    x: number,
+    y: number,
+    z: number
+};
+function showCoords(obj: Point) {
+    console.log(`As cordanadas são: X: ${obj.x}, Y: ${obj.y}, Z: ${obj.z}`)
+};
+const objCoords: Point = {
+    x: 10,
+    y: 30,
+    z: 40
+};
+showCoords(objCoords);

@@ -86,3 +86,14 @@ function showId(id) {
 ;
 showId(32);
 showId('29123723');
+;
+function showCoords(obj) {
+    console.log(`As cordanadas são: X: ${obj.x}, Y: ${obj.y}, Z: ${obj.z}`);
+}
+;
+const objCoords = {
+    x: 10,
+    y: 30,
+    z: 40
+};
+showCoords(objCoords);
