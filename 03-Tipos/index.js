@@ -80,3 +80,9 @@ function showUserRole(role) {
 ;
 console.log(showUserRole(false));
 console.log(showUserRole('admin'));
+function showId(id) {
+    return console.log(`O ID é: ${id}`);
+}
+;
+showId(32);
+showId('29123723');
