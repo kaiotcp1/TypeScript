@@ -114,3 +114,8 @@ showDirection('left');
 let n;
 n = 1000n;
 console.log(typeof n + ' ' + n);
+// symbol
+let symbolA = Symbol('a');
+let symbolB = Symbol('b');
+console.log(symbolA == symbolB);
+console.log(symbolA === symbolB);

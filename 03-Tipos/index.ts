@@ -127,7 +127,7 @@ interface Person {
     age: number,
 };
 // age está sendo implementando na inteface Person e não substituindo.
-const somePerson: Person = {name: "Kaio", age: 22};
+const somePerson: Person = { name: "Kaio", age: 22 };
 console.log(somePerson);
 
 type personType = {
@@ -149,3 +149,11 @@ showDirection('left');
 let n: bigint;
 n = 1000n;
 console.log(typeof n + ' ' + n);
+
+
+// symbol
+let symbolA: symbol = Symbol('a');
+let symbolB = Symbol('b');
+console.log(symbolA == symbolB);
+console.log(symbolA === symbolB);
+
