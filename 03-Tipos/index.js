@@ -110,3 +110,7 @@ function showDirection(direction) {
 }
 // Só aceita valores determinados.
 showDirection('left');
+//bigint
+let n;
+n = 1000n;
+console.log(typeof n + ' ' + n);

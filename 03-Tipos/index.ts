@@ -143,3 +143,9 @@ function showDirection(direction: "left" | 'rigth' | 'center') {
 }
 // Só aceita valores determinados.
 showDirection('left');
+
+
+//bigint
+let n: bigint;
+n = 1000n;
+console.log(typeof n + ' ' + n);
