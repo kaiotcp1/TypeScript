@@ -117,3 +117,19 @@ const objCoords: Point = {
     z: 40
 };
 showCoords(objCoords);
+
+
+//Interface x type alias
+interface Person {
+    name: string,
+};
+interface Person {
+    age: number,
+};
+// age está sendo implementando na inteface Person e não substituindo.
+const somePerson: Person = {name: "Kaio", age: 22};
+console.log(somePerson);
+
+type personType = {
+    name: string
+};

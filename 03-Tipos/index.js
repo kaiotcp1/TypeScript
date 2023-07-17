@@ -97,3 +97,8 @@ const objCoords = {
     z: 40
 };
 showCoords(objCoords);
+;
+;
+// age está sendo implementando na inteface Person e não substituindo.
+const somePerson = { name: "Kaio", age: 22 };
+console.log(somePerson);
