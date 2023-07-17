@@ -102,3 +102,11 @@ showCoords(objCoords);
 // age está sendo implementando na inteface Person e não substituindo.
 const somePerson = { name: "Kaio", age: 22 };
 console.log(somePerson);
+//literal types + union types
+let test;
+test = "testando";
+function showDirection(direction) {
+    console.log(`A direção é: ${direction}`);
+}
+// Só aceita valores determinados.
+showDirection('left');

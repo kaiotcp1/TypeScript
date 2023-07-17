@@ -133,3 +133,13 @@ console.log(somePerson);
 type personType = {
     name: string
 };
+
+
+//literal types + union types
+let test: "testando";
+test = "testando";
+function showDirection(direction: "left" | 'rigth' | 'center') {
+    console.log(`A direção é: ${direction}`)
+}
+// Só aceita valores determinados.
+showDirection('left');
