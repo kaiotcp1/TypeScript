@@ -44,3 +44,33 @@ operations([1, 2, 3]);
 operations([1, 2, 3], 'sum');
 operations([2, 4, 8], 'multiply');
 console.log('-----------');
+//Instace of
+class User {
+    constructor(name) {
+        this.name = name;
+    }
+    ;
+}
+;
+class SuperUser extends User {
+    constructor(name) {
+        super(name);
+    }
+    ;
+}
+;
+const kaio = new User('Kaio');
+const karen = new SuperUser('Karen');
+function userGreeting(user) {
+    if (user instanceof SuperUser) { //Narrow
+        console.log(`Olá ${user.name}, deseja ver os dados do sistema ?`);
+    }
+    else if (user instanceof User) {
+        console.log(`Olá, ${user.name}`);
+    }
+    ;
+}
+;
+userGreeting(kaio);
+userGreeting(karen);
+console.log('-----------');
