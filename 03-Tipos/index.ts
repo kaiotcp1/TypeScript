@@ -71,6 +71,7 @@ function advancedGreeting(firstname: string, lastname?: string) {
 advancedGreeting('Kaio');
 advancedGreeting('Kaio', 'Pasqualinotto');
 
+
 //union type
 function showBalance(balance: string | number) {
     console.log(`O saldo da conta é ${balance}`);
@@ -79,3 +80,14 @@ showBalance(100);
 showBalance('500');
 const arr2: Array<Number | String | boolean> = [1, 'test', true];
 console.log(arr2);
+
+
+//Avançando em union types
+function showUserRole(role: boolean | string) {
+    if(typeof role === 'boolean') {
+        return 'Usuário não aprovado!';
+    };
+    return `A função do usuário é ${role}`;
+};
+console.log(showUserRole(false));
+console.log(showUserRole('admin'));

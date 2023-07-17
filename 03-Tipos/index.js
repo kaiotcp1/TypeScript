@@ -69,3 +69,14 @@ showBalance(100);
 showBalance('500');
 const arr2 = [1, 'test', true];
 console.log(arr2);
+//Avançando em union types
+function showUserRole(role) {
+    if (typeof role === 'boolean') {
+        return 'Usuário não aprovado!';
+    }
+    ;
+    return `A função do usuário é ${role}`;
+}
+;
+console.log(showUserRole(false));
+console.log(showUserRole('admin'));
