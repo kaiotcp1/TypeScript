@@ -57,7 +57,7 @@ const kaio = new User('Kaio');
 const karen = new SuperUser('Karen');
 
 function userGreeting(user: object) {
-    if(user instanceof SuperUser) { //Narrow
+    if (user instanceof SuperUser) { //Narrow
         console.log(`Olá ${user.name}, deseja ver os dados do sistema ?`);
     } else if (user instanceof User) {
         console.log(`Olá, ${user.name}`)
@@ -66,4 +66,33 @@ function userGreeting(user: object) {
 
 userGreeting(kaio);
 userGreeting(karen);
+console.log('-----------');
+
+
+// Operador in
+
+class Dog {
+    name
+    breed
+
+    constructor(name: string, breed?: string) {
+        this.name = name;
+        if (breed) { //Narrow
+            this.breed = breed;
+        };
+    };
+};
+
+const dog1 = new Dog('Billy');
+const dog2 = new Dog('Bob', 'Pastor alemão');
+
+function showDogDetails(dog: Dog) {
+    if ('breed' in dog) { //Narrow
+        return console.log(`O cachorro é da raça ${dog.breed}`);
+    }
+    return console.log('O cachorro é um SRD');
+};
+
+showDogDetails(dog1);
+showDogDetails(dog2);
 console.log('-----------');
