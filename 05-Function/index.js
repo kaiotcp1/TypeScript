@@ -69,7 +69,11 @@ function mergeArray(arr1, arr2) {
 console.log(mergeArray([1, 2, 3], [4, 5]));
 console.log(mergeArray([1, 2, 3], ['Karen,', 'Kaio']));
 console.log('-------------------');
-//Parametros opcionais
+/*
+Parametros opcionais
+Podemos dizer que um arugmento é opcional, dessa forma
+podemos utilizalo ou não na invocação da função e em outros casos...
+*/
 function modernGreeting(name, greet) {
     if (greet) { //Narrow
         return `Olá, ${greet} ${name}, tudo bem ?`;
@@ -80,4 +84,17 @@ function modernGreeting(name, greet) {
 ;
 console.log(modernGreeting('Kaio'));
 console.log(modernGreeting('Kaio', 'Sr'));
+console.log('-------------------');
+/*
+Parametro default
+Podemos inferir um valor default diretamente no argumento da função
+e ele sera tipado por inferência e possibilitando a troca de seus valores
+nos argumento, ao invocar a função.
+*/
+function somaDefault(n, m = 10) {
+    return console.log(n + m);
+}
+;
+somaDefault(10);
+somaDefault(10, 11);
 console.log('-------------------');
