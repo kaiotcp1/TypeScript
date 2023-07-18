@@ -98,3 +98,17 @@ function somaDefault(n, m = 10) {
 somaDefault(10);
 somaDefault(10, 11);
 console.log('-------------------');
+// unknown
+function doSomething(x) {
+    if (Array.isArray(x)) {
+        console.log(x[0]);
+    }
+    else if (typeof x === 'number') {
+        console.log('X é um número');
+    }
+    ;
+}
+;
+doSomething([1, 2, 3]);
+doSomething(5);
+console.log('-------------------');

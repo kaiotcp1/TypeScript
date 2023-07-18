@@ -46,10 +46,10 @@ console.log('-------------------');
 
 
 //Constraints
-function biggestNumber<T extends number | string> (a: T, b: T):T {
+function biggestNumber<T extends number | string>(a: T, b: T): T {
     let biggest: T;
 
-    if(+a > +b) {
+    if (+a > +b) {
         biggest = a;
     } else {
         biggest = b;
@@ -57,8 +57,8 @@ function biggestNumber<T extends number | string> (a: T, b: T):T {
 
     return biggest;
 };
-console.log(biggestNumber(5,3));
-console.log(biggestNumber(2,6));
+console.log(biggestNumber(5, 3));
+console.log(biggestNumber(2, 6));
 console.log('-------------------');
 
 
@@ -73,8 +73,8 @@ function mergeArray<T>(arr1: T[], arr2: T[]) {
     return arr1.concat(arr2);
 };
 
-console.log(mergeArray([1,2,3], [4,5]));
-console.log(mergeArray<number | string>([1,2,3], ['Karen,', 'Kaio']));
+console.log(mergeArray([1, 2, 3], [4, 5]));
+console.log(mergeArray<number | string>([1, 2, 3], ['Karen,', 'Kaio']));
 console.log('-------------------')
 
 
@@ -84,7 +84,7 @@ Podemos dizer que um parâmetro é opcional, dessa forma
 podemos utilizalo ou não na invocação da função e em outros casos...
 */
 function modernGreeting(name: string, greet?: string): string {
-    if(greet) { //Narrow
+    if (greet) { //Narrow
         return `Olá, ${greet} ${name}, tudo bem ?`;
     };
     return `Olá ${name}, tudo bem ?`;
@@ -105,4 +105,17 @@ function somaDefault(n: number, m = 10) {
 };
 somaDefault(10);
 somaDefault(10, 11);
+console.log('-------------------');
+
+
+// unknown
+function doSomething(x: unknown) {
+    if (Array.isArray(x)) {
+        console.log(x[0]);
+    } else if (typeof x === 'number') {
+        console.log('X é um número');
+    };
+};
+doSomething([1,2,3]);
+doSomething(5);
 console.log('-------------------');
