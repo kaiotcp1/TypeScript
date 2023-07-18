@@ -120,7 +120,7 @@ function doSomething(x: unknown) {
         console.log('X é um número');
     };
 };
-doSomething([1,2,3]);
+doSomething([1, 2, 3]);
 doSomething(5);
 console.log('-------------------');
 
@@ -142,5 +142,14 @@ como retorno de erros, que acabam parando a aplicação.
 function sumAll(...n: number[]) {
     return n.reduce((number, sum) => sum + number);
 };
-console.log(sumAll(1,5,7,122));
+console.log(sumAll(1, 5, 7, 122));
+console.log('-------------------');
+
+
+//Destructuring como parametro
+function showProductDetails({ name, price }: { name: string, price: number }):string {
+    return `O nome do produto é ${name}, e ele custa R$${price}`;
+};
+const shirt = {name: 'Camisa', price: 49.99};
+console.log(showProductDetails(shirt))
 console.log('-------------------');
