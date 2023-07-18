@@ -131,7 +131,16 @@ Never
 porém é utilizado quando a funçção não retorna nada
 como retorno de erros, que acabam parando a aplicação.
 */
-function showErrorMessage(msg: string): never {
-    throw new Error(msg);
+// function showErrorMessage(msg: string): never {
+//     throw new Error(msg);
+// };
+// showErrorMessage('Algum erro !');
+// console.log('-------------------');
+
+
+// Rest Operator
+function sumAll(...n: number[]) {
+    return n.reduce((number, sum) => sum + number);
 };
-showErrorMessage('Algum erro !');
+console.log(sumAll(1,5,7,122));
+console.log('-------------------');
