@@ -56,3 +56,16 @@ function biggestNumber(a, b) {
 console.log(biggestNumber(5, 3));
 console.log(biggestNumber(2, 6));
 console.log('-------------------');
+/*
+Especificar tipo de argumento
+Podemos determinar os tipos aceitos direto na execução
+muito utilizado quando se utiliza bibliotecas, pois
+não conseguimos utilizar Constraints...
+*/
+function mergeArray(arr1, arr2) {
+    return arr1.concat(arr2);
+}
+;
+console.log(mergeArray([1, 2, 3], [4, 5]));
+console.log(mergeArray([1, 2, 3], ['Karen,', 'Kaio']));
+console.log('-------------------');
