@@ -40,6 +40,23 @@ function mergeObject<U, T>(obj1: U, obj2: T) {
         ...obj2
     };
 };
-const newObject = mergeObject({name: 'Kaio'}, {age: 30, job: 'Programmer'});
+const newObject = mergeObject({ name: 'Kaio' }, { age: 30, job: 'Programmer' });
 console.log(newObject);
+console.log('-------------------');
+
+
+//Constraints
+function biggestNumber<T extends number | string> (a: T, b: T):T {
+    let biggest: T;
+
+    if(+a > +b) {
+        biggest = a;
+    } else {
+        biggest = b;
+    };
+
+    return biggest;
+};
+console.log(biggestNumber(5,3));
+console.log(biggestNumber(2,6));
 console.log('-------------------');
