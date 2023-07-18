@@ -98,7 +98,11 @@ function somaDefault(n, m = 10) {
 somaDefault(10);
 somaDefault(10, 11);
 console.log('-------------------');
-// unknown
+/*
+Tipo unknown
+é semelhante ao any, ele aceita qualquer tipo de dado,
+porém só deixa ser executado se houber validação de tipo.
+*/
 function doSomething(x) {
     if (Array.isArray(x)) {
         console.log(x[0]);
