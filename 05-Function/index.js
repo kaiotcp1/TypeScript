@@ -116,3 +116,14 @@ function doSomething(x) {
 doSomething([1, 2, 3]);
 doSomething(5);
 console.log('-------------------');
+/*
+Never
+É um tipo de retorno semelhante ao void,
+porém é utilizado quando a funçção não retorna nada
+como retorno de erros, que acabam parando a aplicação.
+*/
+function showErrorMessage(msg) {
+    throw new Error(msg);
+}
+;
+showErrorMessage('Algum erro !');
