@@ -58,7 +58,7 @@ console.log(biggestNumber(2, 6));
 console.log('-------------------');
 /*
 Especificar tipo de argumento
-Podemos determinar os tipos aceitos direto na execução
+Podemos determinar os tipos aceitos direto na execução,
 muito utilizado quando se utiliza bibliotecas, pois
 não conseguimos utilizar Constraints...
 */
@@ -71,7 +71,7 @@ console.log(mergeArray([1, 2, 3], ['Karen,', 'Kaio']));
 console.log('-------------------');
 /*
 Parametros opcionais
-Podemos dizer que um arugmento é opcional, dessa forma
+Podemos dizer que um parâmetro é opcional, dessa forma
 podemos utilizalo ou não na invocação da função e em outros casos...
 */
 function modernGreeting(name, greet) {
@@ -87,7 +87,7 @@ console.log(modernGreeting('Kaio', 'Sr'));
 console.log('-------------------');
 /*
 Parametro default
-Podemos inferir um valor default diretamente no argumento da função
+Podemos inferir um valor default diretamente no parâmetro da função
 e ele sera tipado por inferência e possibilitando a troca de seus valores
 nos argumento, ao invocar a função.
 */
