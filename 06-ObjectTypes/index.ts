@@ -9,17 +9,17 @@ function showProductDetails(product: Product) {
     if (product.isAvailable) {
         return console.log('O produto está disponível');
     }
-        return console.log('O produto não está disponível');
+    return console.log('O produto não está disponível');
 };
 
-const pd1:Product = {
+const pd1: Product = {
     name: 'Camisa',
     price: 22.99,
     isAvailable: false
 };
 
 showProductDetails(pd1); // <----Usando interface
-showProductDetails({name: 'Tênis', price: 83.99, isAvailable: true });
+showProductDetails({ name: 'Tênis', price: 83.99, isAvailable: true });
 console.log('-------------------');
 
 interface User {
@@ -31,13 +31,13 @@ interface User {
 function showUserDetails(user: User) {
     console.log(`O nome do usuário é:  ${user.name}`);
 
-    if(user.role) {
+    if (user.role) {
         console.log(`A função do usuário é: ${user.role}`);
     };
 };
 
-const u1:User = {name: 'Kaio', role: 'Admin'};
-const u2:User = {name: 'Karen'};
+const u1: User = { name: 'Kaio', role: 'Admin' };
+const u2: User = { name: 'Karen' };
 
 showUserDetails(u1);
 showUserDetails(u2);
@@ -50,7 +50,7 @@ interface Car {
     readonly wheels: number,
 };
 
-const fusca:Car = {
+const fusca: Car = {
     brand: 'VW',
     wheels: 4,
 };
@@ -64,11 +64,33 @@ Index signature
 Utilizado quando não se sabe o nome da chave mas o tipo de seu value
 */
 interface CoordObject {
-    [index: string]:number,
+    [index: string]: number,
 }
 let coords: CoordObject = {
     x: 10
 }
 coords.y = 15
 console.log(coords);
+console.log('-------------------');
+
+
+//Extending interfaces
+interface Human {
+    name: string,
+    age: number,
+};
+interface SuperHuman extends Human {
+    superpowers: string[];
+};
+const kaio: Human = {
+    name: 'Kaio',
+    age: 22
+};
+const goku:SuperHuman = {
+    name: 'Goku',
+    age: 22,
+    superpowers: ['Kamehameha', 'Genki Dama'],
+};
+console.log(kaio);
+console.log(goku);
 console.log('-------------------');

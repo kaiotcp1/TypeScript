@@ -45,3 +45,17 @@ let coords = {
 coords.y = 15;
 console.log(coords);
 console.log('-------------------');
+;
+;
+const kaio = {
+    name: 'Kaio',
+    age: 22
+};
+const goku = {
+    name: 'Goku',
+    age: 22,
+    superpowers: ['Kamehameha', 'Genki Dama'],
+};
+console.log(kaio);
+console.log(goku);
+console.log('-------------------');
