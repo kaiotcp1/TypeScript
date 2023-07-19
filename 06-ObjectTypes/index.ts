@@ -114,3 +114,17 @@ const arnold: HumanWithGun = {
 console.log(arnold);
 console.log(arnold.type);
 console.log('-------------------');
+
+
+//Readonly array
+let myArray: ReadonlyArray<string> = ['Kaio','Karen','Karina'];
+// myArray[3] = 'Kay';
+console.log(myArray);
+myArray.forEach((item) =>{
+    console.log('Name: ' + item + '-----');
+})
+myArray = myArray.map((item) => {
+    return 'Name2: ' + item;
+});
+console.log(myArray)
+console.log('-------------------');
