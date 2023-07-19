@@ -85,3 +85,11 @@ const myNumberArray = [1, 2, 3, 4, 5];
 console.log(myNumberArray);
 // const mixedArray: fiveNumbers = [1,2,3,4,'KAIO'];
 console.log('-------------------');
+//Tuplas com readonly
+function showNumbers(numbers) {
+    // numbers[0] = 10;
+    console.log(`${numbers[0]} ------ ${numbers[1]}`);
+}
+;
+showNumbers([1, 5]);
+console.log('-------------------');
