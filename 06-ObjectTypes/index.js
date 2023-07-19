@@ -15,3 +15,19 @@ const pd1 = {
 };
 showProductDetails(pd1); // <----Usando interface
 showProductDetails({ name: 'Tênis', price: 83.99, isAvailable: true });
+console.log('-------------------');
+;
+//Interface com parâmetro opcional
+function showUserDetails(user) {
+    console.log(`O nome do usuário é:  ${user.name}`);
+    if (user.role) {
+        console.log(`A função do usuário é: ${user.role}`);
+    }
+    ;
+}
+;
+const u1 = { name: 'Kaio', role: 'Admin' };
+const u2 = { name: 'Karen' };
+showUserDetails(u1);
+showUserDetails(u2);
+console.log('-------------------');
