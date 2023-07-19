@@ -57,3 +57,18 @@ const fusca:Car = {
 console.log(fusca);
 // fusca.wheels = 5;
 console.log('-------------------');
+
+
+/*
+Index signature
+Utilizado quando não se sabe o nome da chave mas o tipo de seu value
+*/
+interface CoordObject {
+    [index: string]:number,
+}
+let coords: CoordObject = {
+    x: 10
+}
+coords.y = 15
+console.log(coords);
+console.log('-------------------');

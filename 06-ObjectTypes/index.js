@@ -39,3 +39,9 @@ const fusca = {
 console.log(fusca);
 // fusca.wheels = 5;
 console.log('-------------------');
+let coords = {
+    x: 10
+};
+coords.y = 15;
+console.log(coords);
+console.log('-------------------');
