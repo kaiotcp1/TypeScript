@@ -86,7 +86,7 @@ const kaio: Human = {
     name: 'Kaio',
     age: 22
 };
-const goku:SuperHuman = {
+const goku: SuperHuman = {
     name: 'Goku',
     age: 22,
     superpowers: ['Kamehameha', 'Genki Dama'],
@@ -107,7 +107,7 @@ interface Gun {
 type HumanWithGun = Character & Gun;
 
 const arnold: HumanWithGun = {
-    name:'Arbold',
+    name: 'Arbold',
     type: 'Rifle',
     caliber: 7.62
 };
@@ -117,10 +117,10 @@ console.log('-------------------');
 
 
 //Readonly array
-let myArray: ReadonlyArray<string> = ['Kaio','Karen','Karina'];
+let myArray: ReadonlyArray<string> = ['Kaio', 'Karen', 'Karina'];
 // myArray[3] = 'Kay';
 console.log(myArray);
-myArray.forEach((item) =>{
+myArray.forEach((item) => {
     console.log('Name: ' + item + '-----');
 })
 myArray = myArray.map((item) => {
@@ -128,3 +128,12 @@ myArray = myArray.map((item) => {
 });
 console.log(myArray)
 console.log('-------------------');
+
+
+//Tuplas
+type fiveNumbers = [number, number, number, number, number,];
+const myNumberArray: fiveNumbers = [1,2,3,4,5];
+console.log(myNumberArray);
+// const mixedArray: fiveNumbers = [1,2,3,4,'KAIO'];
+console.log('-------------------');
+

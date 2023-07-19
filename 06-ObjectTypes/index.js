@@ -81,3 +81,7 @@ myArray = myArray.map((item) => {
 });
 console.log(myArray);
 console.log('-------------------');
+const myNumberArray = [1, 2, 3, 4, 5];
+console.log(myNumberArray);
+// const mixedArray: fiveNumbers = [1,2,3,4,'KAIO'];
+console.log('-------------------');
