@@ -31,3 +31,11 @@ const u2 = { name: 'Karen' };
 showUserDetails(u1);
 showUserDetails(u2);
 console.log('-------------------');
+;
+const fusca = {
+    brand: 'VW',
+    wheels: 4,
+};
+console.log(fusca);
+// fusca.wheels = 5;
+console.log('-------------------');

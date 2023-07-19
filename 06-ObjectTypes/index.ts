@@ -42,3 +42,18 @@ const u2:User = {name: 'Karen'};
 showUserDetails(u1);
 showUserDetails(u2);
 console.log('-------------------');
+
+
+// readonly
+interface Car {
+    brand: string,
+    readonly wheels: number,
+};
+
+const fusca:Car = {
+    brand: 'VW',
+    wheels: 4,
+};
+console.log(fusca);
+// fusca.wheels = 5;
+console.log('-------------------');
