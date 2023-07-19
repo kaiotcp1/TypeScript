@@ -59,3 +59,13 @@ const goku = {
 console.log(kaio);
 console.log(goku);
 console.log('-------------------');
+;
+;
+const arnold = {
+    name: 'Arbold',
+    type: 'Rifle',
+    caliber: 7.62
+};
+console.log(arnold);
+console.log(arnold.type);
+console.log('-------------------');
