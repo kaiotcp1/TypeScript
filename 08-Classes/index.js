@@ -70,7 +70,6 @@ const kaio3 = new Dwarf('Kaio');
 console.log(kaio3);
 console.log(kaio3.name);
 kaio3.greeting();
-console.log('--------------');
 //Getters
 class Person {
     constructor(name, surname) {
@@ -86,4 +85,36 @@ class Person {
 ;
 const kaio4 = new Person('Kaio', 'Pasqualinotto');
 kaio4.fullName;
+console.log('--------------');
+//Setters
+class Coords {
+    set fillX(x) {
+        if (x === 0) {
+            return;
+        }
+        ;
+        this.x = x;
+        console.log('X inserido com sucesso');
+    }
+    ;
+    set fillY(y) {
+        if (y === 0) {
+            return;
+        }
+        ;
+        this.y = y;
+        console.log('Y inserido com sucesso');
+    }
+    ;
+    get fullCoords() {
+        return console.log(`As cordenadas são: X:${this.x} --- Y:${this.y}`);
+    }
+    ;
+}
+;
+const myCoords = new Coords();
+myCoords.fillX = 15;
+myCoords.fillY = 2;
+console.log(myCoords);
+myCoords.fullCoords;
 console.log('--------------');
