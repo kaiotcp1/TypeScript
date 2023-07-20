@@ -58,3 +58,22 @@ console.log(getSomeKey(server, 'ram'));
 console.log('-----------------');
 
 
+//Keyof type operator
+type Character = {name: string, age: number, hasDriveLicense: boolean};
+type C = keyof Character;
+
+function showCharName(obj: Character, name: C): string {
+    return `${obj.name}`
+};
+
+const myChar: Character = {
+    name: 'Kaio',
+    age: 22,
+    hasDriveLicense: true,
+};
+
+console.log(showCharName(myChar, 'name'));
+// console.log(showCharName(myChar, 'teste'));
+console.log('-----------------');
+
+

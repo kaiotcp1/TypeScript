@@ -41,3 +41,15 @@ const server = {
 console.log(getSomeKey(server, 'ram'));
 // console.log(getSomeKey(server, 'teste'));
 console.log('-----------------');
+function showCharName(obj, name) {
+    return `${obj.name}`;
+}
+;
+const myChar = {
+    name: 'Kaio',
+    age: 22,
+    hasDriveLicense: true,
+};
+console.log(showCharName(myChar, 'name'));
+// console.log(showCharName(myChar, 'teste'));
+console.log('-----------------');
