@@ -153,3 +153,20 @@ const myObject = new Nova();
 myObject2.someMethod();
 myObject.someMethod();
 console.log('--------------');
+// Protected
+class E {
+    constructor() {
+        this.x = 10;
+    }
+}
+;
+class F extends E {
+    showX() {
+        console.log(`X: ${this.x}`);
+    }
+    ;
+}
+;
+const fInstance = new F();
+fInstance.showX();
+console.log('--------------');
