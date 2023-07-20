@@ -228,3 +228,23 @@ console.log(StaticMembers.prop);
 StaticMembers.staticMethod();
 console.log('--------------');
 
+
+//Generic class
+class Item<T, U> {
+    first;
+    second;
+
+    constructor(first: T, second: U) {
+        this.first = first;
+        this.second = second;
+    };
+
+    get showItem() {
+        return console.log(`O first é: ${this.first}, e second é: ${this.second} `)
+    }
+};
+
+const newItem = new Item('caixa', 44);
+newItem.showItem;
+
+
