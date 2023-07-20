@@ -66,3 +66,24 @@ const destroyer = new KillerMachine('Destroyer', 4);
 console.log(trator);
 console.log(destroyer);
 console.log('--------------');
+
+
+//Métodos
+class Dwarf {
+    name;
+
+    constructor(name: string) {
+        this.name = name;
+    }
+
+    greeting() {
+        console.log(`Hello ${this.name}`);
+    };
+};
+
+const kaio3 = new Dwarf('Kaio');
+console.log(kaio3);
+console.log(kaio3.name);
+kaio3.greeting();
+console.log('--------------');
+
