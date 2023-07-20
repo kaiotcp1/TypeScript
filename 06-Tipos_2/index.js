@@ -53,3 +53,11 @@ const myChar = {
 console.log(showCharName(myChar, 'name'));
 // console.log(showCharName(myChar, 'teste'));
 console.log('-----------------');
+//Typeof type operator
+const userName = 'Kaio';
+const userName2 = 'João';
+const userName3 = 'Karen';
+console.log(userName);
+console.log(userName2);
+console.log(userName3);
+console.log('-----------------');

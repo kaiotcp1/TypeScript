@@ -77,3 +77,13 @@ console.log(showCharName(myChar, 'name'));
 console.log('-----------------');
 
 
+//Typeof type operator
+const userName: string = 'Kaio';
+const userName2: typeof userName = 'João';
+type x = typeof userName;
+const userName3: x = 'Karen';
+console.log(userName);
+console.log(userName2);
+console.log(userName3)
+console.log('-----------------');
+
