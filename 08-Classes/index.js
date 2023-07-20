@@ -231,3 +231,13 @@ const newPerson = new ParameterProperties('Kaio', 22);
 console.log(newPerson);
 newPerson.showAge;
 console.log('--------------');
+//Class expressions
+const Person3 = class {
+    constructor(name) {
+        this.name = name;
+    }
+    ;
+};
+const pessoa = new Person3('Kaio');
+console.log(pessoa);
+console.log('--------------');

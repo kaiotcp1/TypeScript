@@ -267,4 +267,19 @@ newPerson.showAge;
 console.log('--------------');
 
 
+//Class expressions
+const Person3 = class<T> {
+    name
+
+    constructor(name: T) {
+        this.name = name;
+    };
+};
+
+const pessoa = new Person3('Kaio');
+console.log(pessoa);
+console.log('--------------');
+
+
+
 
