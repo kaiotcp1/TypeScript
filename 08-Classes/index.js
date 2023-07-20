@@ -118,3 +118,18 @@ myCoords.fillY = 2;
 console.log(myCoords);
 myCoords.fullCoords;
 console.log('--------------');
+;
+class blogPost {
+    constructor(title) {
+        this.title = title;
+    }
+    ;
+    itemTitle() {
+        return `O título do post é: ${this.title}`;
+    }
+    ;
+}
+;
+const myPost = new blogPost('Hello World');
+console.log(myPost.itemTitle());
+console.log('--------------');
