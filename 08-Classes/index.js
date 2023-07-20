@@ -21,3 +21,16 @@ class NewUser {
 const Kaio = new NewUser('Kaio', 22);
 console.log(Kaio);
 console.log('--------------');
+//Campo readonly
+class Car {
+    constructor(name) {
+        this.wheels = 4;
+        this.name = name;
+    }
+    ;
+}
+;
+const fusca = new Car('Fusca');
+console.log(fusca);
+console.log(fusca.wheels);
+console.log('--------------');
