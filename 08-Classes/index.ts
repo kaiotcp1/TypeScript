@@ -281,5 +281,27 @@ console.log(pessoa);
 console.log('--------------');
 
 
+//Abstract class
+abstract class abstractClass {
+    abstract showaName(): void;
+}
+
+class AbstractExample extends abstractClass {
+    name!: string;
+
+    constructor(name: string) {
+        super();
+        this.name = name;
+    };
+
+    showaName(): void {
+        console.log(`O nome é: ${this.name}`);
+    };
+};
+
+const abstractTest = new AbstractExample('Kaio');
+abstractTest.showaName();
+console.log('--------------');
+
 
 
