@@ -212,3 +212,22 @@ class Item {
 ;
 const newItem = new Item('caixa', 44);
 newItem.showItem;
+console.log('--------------');
+//Parameters properties
+class ParameterProperties {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+        this.name = name;
+        this.age = age;
+    }
+    ;
+    get showAge() {
+        return console.log(this.age);
+    }
+}
+;
+const newPerson = new ParameterProperties('Kaio', 22);
+console.log(newPerson);
+newPerson.showAge;
+console.log('--------------');
