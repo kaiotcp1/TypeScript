@@ -122,3 +122,14 @@ type myType = B extends A ? number : string;
 const someVar:myType = 5;
 // const someVar2:myType = 'Teste'; //Fail..
 console.log('-----------------');
+
+
+//Template literals type
+type testA = 'text';
+type CustomType = `some ${testA}`;
+const test: CustomType = 'some text';
+// const testing2 :CustomType = 'some text 2'//Fail
+
+type a1 = 'testando';
+type a2 = 'Union';
+type a3 = `${a1}` | `${a2}`;

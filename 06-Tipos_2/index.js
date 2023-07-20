@@ -82,3 +82,4 @@ console.log('-----------------');
 const someVar = 5;
 // const someVar2:myType = 'Teste'; //Fail..
 console.log('-----------------');
+const test = 'some text';
