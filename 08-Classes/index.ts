@@ -165,3 +165,22 @@ const myPost = new blogPost('Hello World');
 console.log(myPost.itemTitle());
 console.log('--------------');
 
+
+//Override de métodos
+class Base {
+    someMethod(): void {
+        console.log('Alguma coisa');
+    };
+};
+
+class Nova extends Base {
+    someMethod(): void {
+        console.log('Testando outra coisa #Override');
+    };
+};
+const myObject2 = new Base();
+const myObject = new Nova();
+myObject2.someMethod();
+myObject.someMethod();
+console.log('--------------');
+
