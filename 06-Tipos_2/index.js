@@ -76,3 +76,9 @@ const newCar = {
     kg: 1000,
 };
 showKm(newCar.km);
+console.log('-----------------');
+;
+;
+const someVar = 5;
+// const someVar2:myType = 'Teste'; //Fail..
+console.log('-----------------');

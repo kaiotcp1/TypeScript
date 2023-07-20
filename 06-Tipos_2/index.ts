@@ -110,3 +110,15 @@ const newCar = {
 };
 
 showKm(newCar.km);
+console.log('-----------------');
+
+
+//Conditional types
+interface A {};
+
+interface B {};
+
+type myType = B extends A ? number : string;
+const someVar:myType = 5;
+// const someVar2:myType = 'Teste'; //Fail..
+console.log('-----------------');
