@@ -170,3 +170,19 @@ class F extends E {
 const fInstance = new F();
 fInstance.showX();
 console.log('--------------');
+//Private
+//Só pode ser acesso pelas classe que os definiu e também precisam
+//de métodos para serem acessados.
+class PrivateClass {
+    constructor() {
+        this.name = 'Private';
+    }
+    showName() {
+        return console.log(this.name);
+    }
+    ;
+}
+;
+const pObj = new PrivateClass();
+pObj.showName();
+console.log('--------------');
