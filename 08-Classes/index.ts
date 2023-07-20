@@ -87,3 +87,22 @@ console.log(kaio3.name);
 kaio3.greeting();
 console.log('--------------');
 
+
+//Getters
+class Person {
+    name;
+    surname;
+
+    constructor(name: string, surname: string) {
+        this.name = name;
+        this.surname = surname;
+    };
+
+    get fullName() {
+        return console.log(`Full name is ${this.name} ${this.surname}`);
+    };
+};
+
+const kaio4 = new Person('Kaio', 'Pasqualinotto');
+kaio4.fullName;
+
