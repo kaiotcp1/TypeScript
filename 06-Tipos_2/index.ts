@@ -18,9 +18,27 @@ function showProductName<T extends { name: string }>(obj: T) {
     return `O nome do produto é: ${obj.name}`;
 };
 
-const myObj = {name: 'Porta', cor: 'Branca'};
+const myObj = { name: 'Porta', cor: 'Branca' };
 // const myObj2 = {cor: 'Branca'};
 
 console.log(showProductName(myObj));
 // console.log(showProductName(myObj2));
+console.log('-----------------');
+
+
+//Generics com interface
+interface MyObj<T, U> {
+    name: string,
+    wheels: T,
+    engine: U
+};
+
+type Car = MyObj<number, number>;
+type Pen = MyObj<boolean, boolean>;
+
+const myCar: Car = { name: 'Fusca', wheels: 4, engine: 1.2 };
+const myPen: Pen = { name: 'Bic', wheels: false, engine: false };
+
+console.log(myCar);
+console.log(myPen.name);
 console.log('-----------------');
