@@ -34,3 +34,24 @@ const fusca = new Car('Fusca');
 console.log(fusca);
 console.log(fusca.wheels);
 console.log('--------------');
+//Herança e Super
+class Machine {
+    constructor(name) {
+        this.name = name;
+    }
+    ;
+}
+;
+const trator = new Machine('trator');
+class KillerMachine extends Machine {
+    constructor(name, guns) {
+        super(name);
+        this.guns = guns;
+    }
+    ;
+}
+;
+const destroyer = new KillerMachine('Destroyer', 4);
+console.log(trator);
+console.log(destroyer);
+console.log('--------------');
