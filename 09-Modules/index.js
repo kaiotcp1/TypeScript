@@ -49,3 +49,14 @@ const myNumbers = __importStar(require("./numbers.js"));
 console.log(myNumbers); //Object com todos os valores;
 const nX = myNumbers.n1;
 console.log(nX);
+class User {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    ;
+}
+;
+const kaio = new User('Kaio', 22);
+console.log(kaio);
+//-------------------------------------------
