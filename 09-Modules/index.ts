@@ -18,3 +18,10 @@ myFunction();
 //Alias 
 import { someName as name } from './changeName.js';
 console.log(name);
+//-------------------------------------------
+
+//import All
+import * as myNumbers from './numbers.js';
+console.log(myNumbers); //Object com todos os valores;
+const nX = myNumbers.n1;
+console.log(nX);
