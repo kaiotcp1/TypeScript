@@ -16,3 +16,7 @@ const multiples_js_1 = require("./multiples.js");
 console.log(multiples_js_1.a);
 console.log(multiples_js_1.b);
 (0, multiples_js_1.myFunction)();
+//-------------------------------------------
+//Alias 
+const changeName_js_1 = require("./changeName.js");
+console.log(changeName_js_1.someName);

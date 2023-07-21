@@ -13,3 +13,8 @@ import { a, b, myFunction } from './multiples.js';
 console.log(a);
 console.log(b);
 myFunction();
+//-------------------------------------------
+
+//Alias 
+import { someName as name } from './changeName.js';
+console.log(name);
