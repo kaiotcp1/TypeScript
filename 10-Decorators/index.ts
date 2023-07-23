@@ -149,3 +149,24 @@ class ID {
 const newItem = new ID('1');
 console.log(newItem.id);
 console.log('--------------------');
+
+
+//Exemplo real com class decorator
+function createdDate(created: Function) {
+    created.prototype.createdAt = new Date();
+}
+
+@createdDate
+class Book {
+    id;
+    createdAt?: Date;
+
+    constructor(id: number) {
+        this.id = id;
+    };
+};
+
+const newBook = new Book(12);
+newBook.createdAt
+console.log(newBook);
+console.log('--------------------');
