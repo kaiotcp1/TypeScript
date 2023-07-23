@@ -23,16 +23,16 @@ console.log('--------------------');
 
 //Multiplos decorators
 function a() {
-   return function(target: any, propertKey: string, descriptor: PropertyDescriptor){
-       console.log('executou a');
-   };
+    return function (target: any, propertKey: string, descriptor: PropertyDescriptor) {
+        console.log('executou a');
+    };
 };
 
 function b() {
-    return function(target: any, propertKey: string, descriptor: PropertyDescriptor){
+    return function (target: any, propertKey: string, descriptor: PropertyDescriptor) {
         console.log('executou b');
     };
- };
+};
 
 class MultipleDecorators {
     @a()
@@ -47,7 +47,7 @@ console.log('--------------------');
 //Class decorator
 function classDec(constructor: Function) {
     console.log(constructor.name);
-    if(constructor.name === 'User') {
+    if (constructor.name === 'User') {
         console.log('Criando usuário !');
     };
 };
@@ -56,7 +56,7 @@ function classDec(constructor: Function) {
 class User {
     name: string;
 
-    constructor(name:string) {
+    constructor(name: string) {
         this.name = name;
     };
 };
@@ -64,3 +64,28 @@ class User {
 const kaio = new User('Kaio');
 console.log(kaio);
 console.log('--------------------');
+
+
+//Method decorator
+function enumerable(value: boolean) {
+    return function (target: any, propertKey: string, descriptor: PropertyDescriptor) {
+        descriptor.enumerable = value;
+    };
+};
+
+class Machine {
+    name
+
+    constructor(name: string) {
+        this.name = name;
+    };
+
+    @enumerable(false)
+    showName() {
+        console.log(this)
+        return console.log(`O nome da maquina é ${this.name}`);
+    };
+};
+
+const trator = new Machine('Trator')
+trator.showName();

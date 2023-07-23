@@ -76,3 +76,27 @@ User = __decorate([
 const kaio = new User('Kaio');
 console.log(kaio);
 console.log('--------------------');
+//Method decorator
+function enumerable(value) {
+    return function (target, propertKey, descriptor) {
+        descriptor.enumerable = value;
+    };
+}
+;
+class Machine {
+    constructor(name) {
+        this.name = name;
+    }
+    ;
+    showName() {
+        console.log(this);
+        return console.log(`O nome da maquina é ${this.name}`);
+    }
+    ;
+}
+__decorate([
+    enumerable(false)
+], Machine.prototype, "showName", null);
+;
+const trator = new Machine('Trator');
+trator.showName();
