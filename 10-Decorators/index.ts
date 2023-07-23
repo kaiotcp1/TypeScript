@@ -89,3 +89,30 @@ class Machine {
 
 const trator = new Machine('Trator')
 trator.showName();
+console.log('--------------------');
+
+
+//Acessor decorator
+class Monster {
+    name?;
+    age?;
+
+    constructor(name: string, age: number) {
+        this.name = name;
+        this.age = age;
+    };
+
+    @enumerable(true)
+    get showName() {
+        return console.log(`Nome do monstro: ${this.name}`);
+    };
+
+    @enumerable(false)
+    get showAge() {
+        return `Idade do monstro: ${this.age}`;
+    };
+};
+
+const charmander = new Monster('charmander', 10);
+console.log(charmander);
+console.log('--------------------');
