@@ -12,10 +12,32 @@ function myDecorator() {
 class MyClass {
     @myDecorator()
     testing() {
-        console.log('Termiando a execução do método');
+        console.log('Terminando a execução do método');
     };
 };
 
 const myObj = new MyClass();
 myObj.testing();
 console.log('--------------------');
+
+
+//Multiplos decorators
+function a() {
+   return function(target: any, propertKey: string, descriptor: PropertyDescriptor){
+       console.log('executou a');
+   };
+};
+
+function b() {
+    return function(target: any, propertKey: string, descriptor: PropertyDescriptor){
+        console.log('executou b');
+    };
+ };
+
+class MultipleDecorators {
+    @a()
+    @b()
+    testing() {
+        console.log('terminando execução');
+    };
+};

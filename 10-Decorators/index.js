@@ -18,7 +18,7 @@ function myDecorator() {
 ;
 class MyClass {
     testing() {
-        console.log('Termiando a execução do método');
+        console.log('Terminando a execução do método');
     }
     ;
 }
@@ -29,3 +29,27 @@ __decorate([
 const myObj = new MyClass();
 myObj.testing();
 console.log('--------------------');
+//Multiplos decorators
+function a() {
+    return function (target, propertKey, descriptor) {
+        console.log('executou a');
+    };
+}
+;
+function b() {
+    return function (target, propertKey, descriptor) {
+        console.log('executou b');
+    };
+}
+;
+class MultipleDecorators {
+    testing() {
+        console.log('terminando execução');
+    }
+    ;
+}
+__decorate([
+    a(),
+    b()
+], MultipleDecorators.prototype, "testing", null);
+;
