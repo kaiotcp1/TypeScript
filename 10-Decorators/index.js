@@ -53,3 +53,26 @@ __decorate([
     b()
 ], MultipleDecorators.prototype, "testing", null);
 ;
+console.log('--------------------');
+//Class decorator
+function classDec(constructor) {
+    console.log(constructor.name);
+    if (constructor.name === 'User') {
+        console.log('Criando usuário !');
+    }
+    ;
+}
+;
+let User = class User {
+    constructor(name) {
+        this.name = name;
+    }
+    ;
+};
+User = __decorate([
+    classDec
+], User);
+;
+const kaio = new User('Kaio');
+console.log(kaio);
+console.log('--------------------');

@@ -41,3 +41,26 @@ class MultipleDecorators {
         console.log('terminando execução');
     };
 };
+console.log('--------------------');
+
+
+//Class decorator
+function classDec(constructor: Function) {
+    console.log(constructor.name);
+    if(constructor.name === 'User') {
+        console.log('Criando usuário !');
+    };
+};
+
+@classDec
+class User {
+    name: string;
+
+    constructor(name:string) {
+        this.name = name;
+    };
+};
+
+const kaio = new User('Kaio');
+console.log(kaio);
+console.log('--------------------');
