@@ -127,3 +127,33 @@ __decorate([
 const charmander = new Monster('charmander', 10);
 console.log(charmander);
 console.log('--------------------');
+//Property decorator
+function formatNumber() {
+    return function (target, propertyKey) {
+        let value;
+        const getter = function () {
+            return value;
+        };
+        const setter = function (newValue) {
+            value = newValue.padStart(5, '0');
+        };
+        Object.defineProperty(target, propertyKey, {
+            set: setter,
+            get: getter,
+        });
+    };
+}
+;
+class ID {
+    constructor(id) {
+        this.id = id;
+    }
+    ;
+}
+__decorate([
+    formatNumber()
+], ID.prototype, "id", void 0);
+;
+const newItem = new ID('1');
+console.log(newItem.id);
+console.log('--------------------');
